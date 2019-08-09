@@ -1,0 +1,26 @@
+# Documentação do pm2 
+http://pm2.keymetrics.io/
+
+# Para utilizar o pm2, utilize o seu prompt de comando como administrador:
+npm install -g pm2
+ 
+# Para iniciar a instância:
+pm2 start <caminho do server no projeto>
+
+# Para fechar todas as instâncias:
+pm2 delete all
+
+# Para checar os logs do server:
+pm2 logs
+
+# Status do servidor
+pm2 status
+
+# Para monitorar
+pm2 monit
+
+# Recarregar server
+pm2 reload all
+
+# Abrir instâncias dos clusters
+pm2 start <Caminho do server> -i <nro de instâncias>
